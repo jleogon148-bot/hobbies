@@ -1,0 +1,336 @@
+
+/* ==========================================
+   1. ESTILO GENERAL DE LA PÁGINA
+   ========================================== */
+
+/* body selecciona todo el cuerpo de la página */
+
+body {
+    font-family: Arial, sans-serif;
+    /* Tipo de letra: Arial.
+       Si no está disponible, se utiliza otra sin remates */
+
+    margin: 0;
+    /* Elimina el margen exterior que pone
+       el navegador por defecto */
+
+    background-color: #f4f4f4;
+    /* Color de fondo de la página */
+
+    color: #333333;
+    /* Color general del texto */
+}
+
+
+/* ==========================================
+   2. ENCABEZADO
+   ========================================== */
+
+header {
+    background-color: #2f5d50;
+    /* Color de fondo verde oscuro */
+
+    color: white;
+    /* Color blanco para el texto */
+
+    text-align: center;
+    /* Centra horizontalmente el texto */
+
+    padding: 30px;
+    /* Espacio interior entre el contenido y los bordes */
+}
+
+header h1 {
+    /* Selecciona los h1 que están dentro de header */
+
+    margin: 0;
+    /* Elimina el margen del título */
+
+    font-size: 36px;
+    /* Tamaño de letra de 36 píxeles */
+}
+
+
+/* ==========================================
+   3. MENÚ DE NAVEGACIÓN
+   ========================================== */
+
+nav {
+    background-color: #333333;
+    /* Fondo gris oscuro */
+
+    text-align: center;
+    /* Centra los enlaces */
+
+    padding: 15px;
+    /* Espacio interior del menú */
+}
+
+nav a {
+    /* Selecciona los enlaces que están dentro de nav */
+
+    color: white;
+    /* Color blanco de los enlaces */
+
+    text-decoration: none;
+    /* Elimina el subrayado */
+
+    margin: 15px;
+    /* Separa los enlaces entre sí */
+}
+
+nav a:hover {
+    /* :hover se aplica cuando el ratón
+       está colocado sobre el enlace */
+
+    color: yellow;
+    /* Cambia el enlace a amarillo */
+}
+
+
+/* ==========================================
+   4. CONTENIDO PRINCIPAL
+   ========================================== */
+
+main {
+    width: 80%;
+    /* El contenido ocupa el 80% del ancho disponible */
+
+    margin: auto;
+    /* Centra horizontalmente el bloque
+       repartiendo los márgenes laterales */
+}
+
+
+/* ==========================================
+   5. SECCIONES
+   ========================================== */
+
+section {
+    background-color: white;
+    /* Fondo blanco de cada sección */
+
+    margin-top: 25px;
+    /* Separación exterior por arriba */
+
+    margin-bottom: 25px;
+    /* Separación exterior por abajo */
+
+    padding: 25px;
+    /* Espacio interior alrededor del contenido */
+
+    border-radius: 8px;
+    /* Redondea las esquinas */
+}
+
+
+/* ==========================================
+   6. TÍTULOS
+   ========================================== */
+
+h2 {
+    color: #2f5d50;
+    /* Color verde para los títulos de sección */
+
+    border-bottom: 2px solid #2f5d50;
+    /* Borde inferior de 2 píxeles, sólido y verde */
+
+    padding-bottom: 5px;
+    /* Espacio entre el texto y el borde inferior */
+}
+
+h3 {
+    color: #555555;
+    /* Color gris oscuro para los subtítulos */
+}
+
+
+/* ==========================================
+   7. IMÁGENES
+   ========================================== */
+
+/* CENTRAR LAS IMÁGENES */
+
+img {
+    display: block;
+    margin: 20px auto;
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* ==========================================
+   8. PÁRRAFOS
+   ========================================== */
+
+p {
+    line-height: 1.6;
+    /* Altura de línea: mejora la separación
+       entre las líneas de texto */
+}
+
+
+/* ==========================================
+   9. ESTILO PARA UNA CLASE
+   ========================================== */
+
+.destacado {
+    /* El punto . indica un selector de clase */
+    /* Se aplica a class="destacado" */
+
+    background-color: #eeeeee;
+    /* Fondo gris claro */
+
+    padding: 15px;
+    /* Espacio interior */
+
+    border-left: 5px solid #2f5d50;
+    /* Borde izquierdo verde de 5 píxeles */
+}
+
+
+/* ==========================================
+   10. ENLACES
+   ========================================== */
+
+a {
+    color: #0066cc;
+    /* Color azul para los enlaces generales */
+}
+
+a:hover {
+    color: red;
+    /* Los enlaces cambian a rojo al pasar el ratón */
+}
+
+/* Nota:
+   nav a:hover es más específico que a:hover.
+   Por eso los enlaces del menú se vuelven amarillos,
+   mientras que los demás se vuelven rojos. */
+
+
+/* ==========================================
+   11. TABLAS
+   ========================================== */
+
+table {
+    width: 100%;
+    /* La tabla ocupa todo el ancho de su sección */
+
+    border-collapse: collapse;
+    /* Une los bordes de las celdas
+       para que no aparezcan separados */
+}
+
+th {
+    background-color: #2f5d50;
+    /* Fondo verde de las celdas de encabezado */
+
+    color: white;
+    /* Texto blanco */
+}
+
+th,
+td {
+    /* La coma permite aplicar el mismo estilo
+       a varios tipos de elementos */
+
+    border: 1px solid #999999;
+    /* Borde gris, sólido, de 1 píxel */
+
+    padding: 10px;
+    /* Espacio interior de cada celda */
+
+    text-align: center;
+    /* Centra el contenido de las celdas */
+}
+
+
+/* ==========================================
+   12. ENLACE VOLVER AL INICIO
+   ========================================== */
+
+/* ESTILO DEL BOTÓN */
+
+/* Centrar el botón */
+.volver {
+    text-align: center;
+}
+
+/* Diseño del botón */
+.volver button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    cursor: pointer;
+}
+
+/* Diseño del enlace dentro del botón */
+.volver a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Efecto al pasar el ratón */
+.volver button:hover {
+    background-color: darkred;
+}
+/* ==========================================
+   13. PIE DE PÁGINA
+   ========================================== */
+
+footer {
+    background-color: #333333;
+    /* Fondo gris oscuro */
+
+    color: white;
+    /* Texto blanco */
+
+    text-align: center;
+    /* Texto centrado */
+
+    padding: 20px;
+    /* Espacio interior */
+
+    margin-top: 30px;
+    /* Separación respecto al contenido anterior */
+}
+
+
+/* ==========================================
+   14. DISEÑO RESPONSIVE
+   ========================================== */
+
+/* Una media query permite aplicar estilos distintos
+   según las características de la pantalla.
+
+   En este caso, las reglas interiores solo se aplican
+   cuando el ancho de pantalla es de 600 px o menos. */
+
+@media (max-width: 600px) {
+
+    main {
+        width: 95%;
+        /* En pantallas pequeñas el contenido
+           ocupa el 95% del ancho disponible */
+    }
+
+    nav a {
+        display: block;
+        /* Los enlaces pasan a ocupar líneas separadas */
+
+        margin: 10px;
+        /* Separa verticalmente los enlaces */
+    }
+
+    header h1 {
+        font-size: 26px;
+        /* Reduce el tamaño del título principal
+           para adaptarlo a pantallas pequeñas */
+    }
+
+}
